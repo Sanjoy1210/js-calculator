@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Simple Calculator</title>
+
+    <!-- tailwind cdn link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 class="text-5xl text-center font-bold mt-8">Simple JS Calculator</h1>
+    <section class="mx-auto w-2/4 mt-8">
+        <div class="calculator w-2/4 mx-auto">
+            <input type="text" id="input-field" class="outline-none block mx-auto mt-8 r-0 text-right" placeholder="0">
+            <div class="mt-8">
+                <div class="col flex justify-evenly">
+                    <button class="block btn" onclick="display('7')">7</button>
+                    <button class="block btn" onclick="display('8')">8</button>
+                    <button class="block btn" onclick="display('9')">9</button>
+                    <button class="block btn font-medium" onclick="display('+')">+</button>
+                </div>
+                <div class="col flex justify-evenly">
+                    <button class="block btn mt-4" onclick="display('4')">4</button>
+                    <button class="block btn mt-4" onclick="display('5')">5</button>
+                    <button class="block btn mt-4" onclick="display('6')">6</button>
+                    <button class="block btn font-medium mt-4" onclick="display('-')">-</button>
+                </div>
+                <div class="col flex justify-evenly">
+                    <button class="block btn mt-4" onclick="display('1')">1</button>
+                    <button class="block btn mt-4" onclick="display('2')">2</button>
+                    <button class="block btn mt-4" onclick="display('3')">3</button>
+                    <button class="block btn font-medium mt-4" onclick="display('x')">x</button>
+                </div>
+
+                <div class="col flex justify-evenly">
+                    <button class="block btn mt-4 mb-4" id="clear">C</button>
+                    <button class="block btn mt-4 mb-4" onclick="display('0')">0</button>
+                    <button class="block btn mt-4 mb-4" onclick="calculate()">=</button>
+                    <button class="block btn font-medium mt-4 mb-4" onclick="display('/')">/</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- custom script link -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
